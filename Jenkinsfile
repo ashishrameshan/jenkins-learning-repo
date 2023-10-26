@@ -14,12 +14,6 @@ pipeline {
                 sh 'mvn package'
             }
         }
-
-        stage('Prepare working directory'){
-            steps {
-                sh "mkdir -p /tmp/app"
-            }
-        } 
         
         stage('Create Docker Image'){
             steps {
