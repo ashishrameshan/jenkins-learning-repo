@@ -21,15 +21,9 @@ pipeline {
             }
         }
         
-        stage('Maven build'){
+        stage('Create Docker Image'){
             steps {
-                echo "Maven Build completed..."
-            }
-        }
-        
-        stage('Maven Deploy'){
-            steps {
-                echo "Maven Project Deployed..."
+                sh "docker build -t ashish/springboot:latest ."
             }
         }
     }
