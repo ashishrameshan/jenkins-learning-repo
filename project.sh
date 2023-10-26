@@ -1,1 +1,1 @@
-echo "This is project.sh file for push event"
+echo "This is project.sh file for push event test"
